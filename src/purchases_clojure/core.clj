@@ -50,7 +50,7 @@
         _ (println "Type in date")
         input (read-line)
         date-purchases (filter (fn [line]
-                            (= input (:date line)))
+                            (= input (:date line)))         ;comment test
                           purchases)
         _ (pprint/pprint date-purchases)
 
