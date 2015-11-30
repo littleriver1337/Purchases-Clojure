@@ -65,7 +65,7 @@
   ;(spit (format) "filtered_%s.eden" input)
   ))
 (defn purchases-html []
-  (let [purchases (read-purchaes)]
+  (let [purchases (read-purchases)]
     (map (fn [line]
            [:p
             (str (:category line)
